@@ -1,0 +1,56 @@
+h1 {
+    font-family: 'Arvo';
+    font-size: 2.1em;
+    margin: 0;
+}
+body { font-family: 'Open Sans'; }
+
+#map { height: 100%; }
+
+.grid-container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 5px 12px;
+    grid-template-areas:
+    "menu ."
+    "map messages";
+}
+
+.menu { grid-area: menu; }
+.map { grid-area: map; }
+.messages-container {
+    grid-area: messages;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+#messages {
+    flex-grow: 1;
+
+    overflow-y: scroll;
+}
+
+#messages-form {
+    margin: 0;
+}
+
+#messages-form-top, #messages-form-bottom {
+    display: flex;
+}
+
+input[name="user"] {
+    /* flex-grow: 1; */
+}
+
+input[name="message"] {
+    flex-grow: 2;
+}
+
+.message {
+    margin-bottom: 6px;
+}

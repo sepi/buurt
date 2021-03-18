@@ -1,0 +1,6 @@
+{% for msg in messages %}
+<div class="message">
+  <div class="message-header">{{msg.created_at}}</div>
+  <div calss="message-body"><strong>{{ msg.user }}:</strong> {{ msg.text }}</div>
+</div>
+{% endfor %}

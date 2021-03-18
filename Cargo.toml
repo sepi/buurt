@@ -1,0 +1,18 @@
+[package]
+name = "buurt"
+version = "0.1.0"
+authors = ["Raffael Mancini <raffael.mancini@kussbus.lu>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+actix-files = "*"
+tera = "1"
+chrono = "0.4"
+serde = "1"
+rand = "*"
+serde_json = "*"
+ctrlc = "*"
+futures = "*"
